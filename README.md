@@ -9,7 +9,7 @@ This library extends the Kaz.Operations.Text possibilities by adding a tokenizer
 
 ## How to use
 
-```
+```csharp
 using System;
 using Kaz.Operations.Text.Tokenizing;
 
