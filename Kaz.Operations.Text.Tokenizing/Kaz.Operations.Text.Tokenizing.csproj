@@ -22,10 +22,11 @@
 		<None Include="README.md" Pack="true" PackagePath="\" />
 	</ItemGroup>
 
-	<ItemGroup>
+	<ItemGroup Condition="$(TargetFramework.StartsWith('netframework'))">
 	  <PackageReference Include="PolySharp" Version="1.16.0">
 	    <PrivateAssets>all</PrivateAssets>
 	  </PackageReference>
+	  <PackageReference Include="System.Memory" Version="4.6.3" />
 	</ItemGroup>
 
 </Project>
